@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # vim:set shiftwidth=4 expandtab:
 
 
@@ -544,7 +544,7 @@ class GlobalConfig:
     ConfigFilePath.append('/etc/' + ConfigFile)
         # ^ /etc/nftwatch.yml
 
-    NftCommandLine = '/usr/sbin/nft -nn --handle list ruleset'
+    NftCommandLine = 'nft -nn --handle list ruleset'
         # ^ The command line used to read the nftables output.
 
     RefreshPeriod = 2
